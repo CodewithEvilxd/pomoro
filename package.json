@@ -1,0 +1,63 @@
+{
+  "name": "pomoro",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "lint:fix": "eslint src --fix && pnpm format",
+    "typecheck": "tsc --noEmit --incremental false",
+    "format": "prettier --write .",
+    "format:check": "prettier -c .",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@lottiefiles/react-lottie-player": "^3.5.3",
+    "clsx": "^2.0.0",
+    "date-fns": "^2.30.0",
+    "date-fns-tz": "^2.0.0",
+    "formik": "^2.4.3",
+    "framer-motion": "^10.15.1",
+    "next": "13.4.13",
+    "next-pwa": "^5.6.0",
+    "next-themes": "^0.2.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.10.1",
+    "react-loading-skeleton": "^3.3.1",
+    "react-spring-bottom-sheet": "^3.4.1",
+    "uuid": "^9.0.0",
+    "yup": "^1.2.0",
+    "zustand": "^4.4.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.7.0",
+    "@commitlint/config-conventional": "^17.7.0",
+    "@types/node": "20.4.9",
+    "@types/react": "18.2.19",
+    "@types/react-dom": "18.2.7",
+    "@types/uuid": "^9.0.2",
+    "@typescript-eslint/eslint-plugin": "^6.3.0",
+    "autoprefixer": "10.4.14",
+    "eslint": "8.46.0",
+    "eslint-config-next": "13.4.13",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "eslint-plugin-unused-imports": "^3.0.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.2.3",
+    "postcss": "8.4.27",
+    "prettier": "^3.0.1",
+    "tailwindcss": "3.3.3",
+    "typescript": "5.1.6"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx,html,css,json}": [
+      "pnpm prettier --write"
+    ]
+  }
+}
